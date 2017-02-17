@@ -8,7 +8,10 @@ Gitapp.prototype.getGitInfo = function(user, displayFunction) {
         displayFunction(user, response);
     }).fail(function(error) {
         console.log(error.responseJSON.message);
-        $('.showuser').text(error.responseJSON.message);
+        $('.showUserName').text("User " + user + " is " + error.responseJSON.message);
+        $('.showCreationDate').text(" ");
+        $('.showUserEmail').text(" ");
+        $("#showUserImage").text(" ");
     });
 };
 
