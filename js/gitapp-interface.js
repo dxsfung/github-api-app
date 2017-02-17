@@ -3,7 +3,7 @@ var Gitapp = require('./../js/gitapp.js').githubModule;
 var displayGitInfo = function(user, userGitInfo) {
     $('.showUserName').text("Full Name of " + user + " is " + userGitInfo.name);
     $('.showCreationDate').text("The account was created on " + userGitInfo.created_at);
-    $("#showUserImage").html("<img src="+ userGitInfo.avatar_url + ">");
+    $("#showUserImage").html("<img src="+ userGitInfo.avatar_url + "height='300' width='300' >");
 };
 
 $(document).ready(function() {
